@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    /* Use of custom properties */
+    --accentBlack: #000;
+    --basicBorder: var(--accentBlack) solid 3px;
+    --smallFont: 0.8em;
+    --largeFont: 1.3em;
+    --hugeFont: 1.7em;
+    --boxColor: #1EA1A1;
+    --backgroundColor: #FFFBD3;
+    --gradientDark: #2B585F;
+    --gradientLight: #37AB90;
+    --buttonColor: #E6DF6A;
+}
+
+body {
+    background-color: var(--backgroundColor);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+/*Body code*/
+
+.banner {
+
+    /*Includes nested CSS */
+    border: double 12px var(--accentBlack);
+    background: no-repeat linear-gradient(to top, var(--gradientDark), var(--gradientLight));
+    /* Use of gradient */
+    padding: 0;
+    margin: 0;
+
+    h1 {
+        font-size: var(--hugeFont);
+        text-decoration: underline;
+        text-align: center;
+    }
+
+    img {
+        width: 70px;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+
+    ul {
+        /* Uses flex */
+        list-style: none;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    a {
+        color: var(--accentBlack);
+        font-size: var(--largeFont);
+        text-decoration: none;
+        border: solid var(--accentBlack);
+        white-space: nowrap;
+        margin: auto;
+        display: block;
+        background-color: var(--boxColor);
+    }
+
+    #hidden {
+        display: none;
+    }
+}
+
+/*Universal banner code*/
+
+main {
+
+    h1 {
+        font-size: var(--largeFont);
+        margin: 35px 0px 10px 0px;
+        display: block;
+        text-align: center;
+    }
+
+    .squeezed {
+        display: flex;
+        border: var(--basicBorder);
+        margin: 20px;
+        font-size: 1.1em;
+        background-color: var(--boxColor);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .squeezed p {
+        display: inline-block;
+        width: 55%;
+    }
+
+    span {
+        font-weight: bold;
+    }
+
+    .squeezed img {
+        /*Image which floats to right of the text*/
+        float: right;
+        width: 170px;
+        height: auto;
+        margin: 10px;
+        display: flex;
+    }
+
+    .centeredText {
+        margin: auto;
+        text-align: center;
+    }
+
+    .otherSites {
+        /*Use of grid*/
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .otherSites a {
+        color: var(--accentBlack);
+        text-decoration: none;
+        border: var(--basicBorder);
+        display: block;
+        margin: 15px auto 15px auto;
+        font-size: var(--largeFont);
+        border-radius: 5px;
+        background-color: var(--boxColor);
+    }
+
+    .otherSites a:nth-child(1) {
+        /*use of pseudoclass*/
+        grid-row: 1;
+    }
+
+    .otherSites a:nth-child(2) {
+        grid-row: 2;
+    }
+
+    .otherSites a:nth-child(3) {
+        grid-row: 3;
+    }
+}
+
+/*Universal main code*/
+
+footer {
+
+    nav {
+        margin: auto;
+    }
+
+    h2 {
+        font-style: italic;
+        font-weight: normal;
+        text-decoration: underline;
+        display: block;
+        text-align: center;
+    }
+
+    ul {
+        font-size: var(--smallFont);
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    li {
+        margin: 5px 0px 5px 0px;
+    }
+
+    .bottomNav a {
+        text-decoration: none;
+        color: var(--accentBlack);
+        white-space: nowrap;
+        display: block;
+        text-align: center;
+    }
+
+    .source p {
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+
+    .source a {
+        text-decoration: none;
+    }
+}
+
+/*Universal footer code*/
+
+@media screen and (min-width: 768px) {
+    li a:hover {
+        font-style: italic;
+        text-decoration: underline;
+    }
+
+    .banner li a:hover {
+        background-color: var(--buttonColor);
+        text-decoration: none;
+    }
+}
+
+/*Big viewport settings*/
