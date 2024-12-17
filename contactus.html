@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rattle Contact Us</title>
+    <link rel="stylesheet" href="./styles/sites.css">
+    <link rel="icon" href="./media/rattleLogo.png">
+</head>
+
+<body>
+    <div class="banner">
+        <header>
+            <img src="./media/rattleLogo.png" alt="rat logo">
+            <h1>Rattle</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./aboutus.html">About Us</a></li>
+                <li id="hidden"><a href="./staff.html">Staff</a></li>
+                <li id="hidden"><a href="./testimonials.html">Testimonials</a></li>
+                <li id="hidden"><a href="./boards.html">Hours and Rates</a></li>
+                <li><a href="./relatedsites.html">Related Sites</a></li>
+                <li><a href="./contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <h1>Contact Us</h1>
+        <br>
+        <p class="centeredText">
+            Contact us for more information at
+            <a href="mailto:rattle.incorporate@email.com">rattle.incorporate@email.com</a>
+            or trough our phone number at <a href="tel:8196666464">819-666-6464</a>.
+            <br><br>
+            Fill in this form if you wish to place an order.
+            <br><br>
+        </p>
+        <form action="contactus.html">
+            <div class="form-group">
+                <label for="first name">First Name</label>
+                <input type="text" id="first name" name="first name" placeholder="John" class="input">
+            </div>
+            <div class="form-group">
+                <label for="last name">Last Name</label>
+                <input type="text" id="last name" name="last name" placeholder="Doe" class="input">
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail Address</label>
+                <input type="email" id="email" name="email" placeholder="john.doe@email.com" class="input">
+            </div>
+            <div class="form-group">
+                <label for="products">Which products would you like to purchase</label>
+                <fieldset id="products" name="products">
+                    <label for="meat">Rat Meat</label>
+                    <input type="checkbox" name="meat" id="meat" class="input">
+                    <label for="lean">Lean Rat Meat</label>
+                    <input type="checkbox" name="lean" id="lean" class="input">
+                    <label for="live">Live Rat</label>
+                    <input type="checkbox" name="live" id="live" class="input">
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <label for="shipment">In which way would you like to receive your products</label>
+                <fieldset id="shipment" name="shipment">
+                    <label for="shipping">Shipping</label>
+                    <input type="radio" name="delivery" id="shipping" class="input">
+                    <label for="pickup">Pick-Up</label>
+                    <input type="radio" name="delivery" id="pickup" class="input">
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <label for="branch">Which of our branches would you like to receive your product from</label>
+                <select name="branch" id="branch" class="select">
+                    <option value="default">--Select--</option>
+                    <option value="Ottawa">Ottawa Branch</option>
+                    <option value="Gatineau">Gatineau Branch</option>
+                    <option value="Toronto">Toronto Branch</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="questions">Please enter any other question you may have</label>
+                <textarea name="questions" id="questions" class="textarea"></textarea>
+                <br>
+                <button type="submit" class="button">submit</button>
+                <br>
+                <button type="reset" class="button">Reset</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <nav>
+            <h2>Footer</h2>
+            <ul class="bottomNav">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./aboutus.html">About Us</a></li>
+                <li><a href="./staff.html">Staff</a></li>
+                <li><a href="./testimonials.html">Testimonials</a></li>
+                <li><a href="./boards.html">Hours and Rates</a></li>
+                <li><a href="./relatedsites.html">Related Sites</a></li>
+                <li><a href="./contactus.html">Contact Us</a></li>
+            </ul>
+            <br>
+            <ul class="source">
+                <li>
+                    <p>The logo was made by Alexis L'Espérance</p>
+                </li>
+                <li>
+                    <p>The <a href="https://pixabay.com/vectors/rat-mouse-rodent-vermin-creature-5488348/"
+                            target="_blank">
+                            rat silouhette</a> image was made by b0red on pixabay.</p>
+                </li>
+                <li>
+                    <p>The <a href="https://pixabay.com/vectors/pork-pork-loin-fatty-meat-7026683/"
+                            target="_blank">meat</a>
+                        image was made by QUICK_DRAWING on pixabay.</p>
+                </li>
+                <li>
+                    <p>The <a href="https://pixabay.com/vectors/rat-mouse-rodent-vermin-creature-5488349/"
+                            target="_blank">
+                            standing rat</a> image was made by b0red on pixabay.</p>
+                </li>
+                <li>
+                    <p> The <a
+                            href="https://www.istockphoto.com/vector/internet-world-vector-gm1028603300-275714608?searchscope=image%2Cfilm"
+                            target="_blank">planet logo</a> image was made by Alexandra_Koch on pixabay.
+                    </p>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
